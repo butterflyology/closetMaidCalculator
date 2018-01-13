@@ -1,0 +1,12 @@
+name: closetMaidCalculator
+title: closetMaidCalculator
+username:
+account: butterflyology
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 256547
+bundleId: 1174387
+url: https://butterflyology.shinyapps.io/closetMaidCalculator/
+when: 1515823520.13818
+asMultiple: FALSE
+asStatic: FALSE
