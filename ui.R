@@ -62,26 +62,27 @@ shinyUI(fluidPage(
                textOutput("text_int")
       ),
       tabPanel("Documentation",
-               p(h4("ClosetMaid cost estimator:")),
-               br(),
-               helpText("This application calculates the base cost at Home Depot plus California sales tax"),
-               HTML('<u><b>Equation for calculation: </b></u>
-                    <br> <br>
-                    <b> Total = WM + BR + LS + ShS + Rd + RB + HT = Sub total + 7.5% </b>
-                    <br>
-                    where: <br>
-                    <b>WM</b> = Wall Mounts ($15.44 ea)<br>
-                    <b>BR</b> = Brackets ($6.98 ea)<br>
-                    <b>LS</b> = Long Shelves ($13.20 ea)<br>
-                    <b>ShS</b> = Short Shelves ($8.98 ea)<br>
-                    <b>Rd</b> = 72" rods ($9.45 ea)<br>
-                    <b>RB</b> = Rod Brackets ($1.48 ea)<br>
-                    <b>HT</b> = Hang tracks ($22.44 ea)<br>
-                    <br>
-                    This calculation includes wire caps for the ends of each shelf and end caps for each rod.'
-                    )
+              br(),
+              p(h4(a("ClosetMaid Wire Shelving System", href = "https://www.homedepot.com/s/closetmaid+wire+shelves?NCNI-5", target = "_blank"))),
+              p(h4("ClosetMaid cost estimator:")),
+              helpText("This application calculates the base cost at Home Depot plus California sales tax"),
+              HTML('<u><b>Equation for calculation: </b></u>
+                  <br> <br>
+                  <b> Total = WM + BR + LS + ShS + Rd + RB + HT = Sub total + 7.5% </b>
+                  <br>
+                  where: <br>
+                  <b>WM</b> = Wall Mounts ($15.44 ea)<br>
+                  <b>BR</b> = Brackets ($6.98 ea)<br>
+                  <b>LS</b> = Long Shelves ($13.20 ea)<br>
+                  <b>ShS</b> = Short Shelves ($8.98 ea)<br>
+                  <b>Rd</b> = 72" rods ($9.45 ea)<br>
+                  <b>RB</b> = Rod Brackets ($1.48 ea)<br>
+                  <b>HT</b> = Hang tracks ($22.44 ea)<br>
+                  <br>
+                  This calculation includes wire caps for the ends of each shelf and end caps for each rod.'
                   )
                 )
               )
             )
+          )
 ))
