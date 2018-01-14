@@ -1,4 +1,4 @@
-#
+# ui  code for closetMaid calculator
 library("shiny")
 
 
@@ -64,6 +64,7 @@ shinyUI(fluidPage(
       tabPanel("Documentation",
               br(),
               p(h4(a("ClosetMaid Wire Shelving System", href = "https://www.homedepot.com/s/closetmaid+wire+shelves?NCNI-5", target = "_blank"))),
+              p(h5("The minimum requirements for the ClosetMaid system are: a series of mounts that attach to the wall, brackets that attach to the wall mounts and hold up the shevles, and the shelves themselves. You can add a clothes rod to each shelf, which requires rod brackets to attach the shelf.")),
               p(h4("ClosetMaid cost estimator:")),
               helpText("This application calculates the base cost at Home Depot plus California sales tax"),
               HTML('<u><b>Equation for calculation: </b></u>
@@ -73,16 +74,16 @@ shinyUI(fluidPage(
                   where: <br>
                   <b>WM</b> = Wall Mounts ($15.44 ea)<br>
                   <b>BR</b> = Brackets ($6.98 ea)<br>
-                  <b>LS</b> = Long Shelves ($13.20 ea)<br>
-                  <b>ShS</b> = Short Shelves ($8.98 ea)<br>
+                  <b>LS</b> = Long Shelves 6ft x 16in ($13.20 ea)<br>
+                  <b>ShS</b> = Short Shelves 4ft x 16in ($8.98 ea)<br>
                   <b>Rd</b> = 72" rods ($9.45 ea)<br>
                   <b>RB</b> = Rod Brackets ($1.48 ea)<br>
                   <b>HT</b> = Hang tracks ($22.44 ea)<br>
                   <br>
                   This calculation includes wire caps for the ends of each shelf and end caps for each rod.'
-                  )
+                  ),
+              DT::dataTableOutput('tbl'))
                 )
               )
-            )
           )
 ))

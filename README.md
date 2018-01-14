@@ -11,3 +11,4 @@ Major commits:
 
 1) 2018-01-12: Initial commit and push to `shinyapps.io`.
 1) 2018-01-13: Added link to Home Depot page with wire shelving items listed.
+1) 2018-01-14: Added links to each piece as part of a table in the documentation tab.
