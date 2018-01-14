@@ -5,8 +5,8 @@ account: butterflyology
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 256547
-bundleId: 1174397
+bundleId: 1175199
 url: https://butterflyology.shinyapps.io/closetMaidCalculator/
-when: 1515825084.5372
+when: 1515904451.79917
 asMultiple: FALSE
 asStatic: FALSE
