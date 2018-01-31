@@ -1,8 +1,8 @@
 # ui  code for closetMaid calculator
 library("shiny")
+library("shinythemes")
 
-
-shinyUI(fluidPage(
+shinyUI(fluidPage(theme = shinytheme("cosmo"),
   titlePanel("Calculator to estimate the cost of a ClosetMaid addtion"),
 
   sidebarLayout(
@@ -30,7 +30,7 @@ shinyUI(fluidPage(
                   max = 10,
                   value = 0),
       sliderInput("rod",
-                  label = h6("Number of 72 rods"),
+                  label = h6('Number of 72" rods'),
                   min = 0,
                   max = 10,
                   value = 0),
